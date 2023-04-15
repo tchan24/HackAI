@@ -1,5 +1,5 @@
 import boto3
-import fastparaquet
+import fastparquet
 import pyarrow
 import flask
 import io
@@ -22,7 +22,6 @@ df_pbp = pd.read_parquet(buffer_pbp)
 for col in df_pbp.columns:
     print(col)
 display(df_pbp)
-df_pbp.to_csv('pbp.csv')
 
 # Read Players Data from S3
 players_object = s3.Object('utd-hackathon', 'game_players.parquet')
