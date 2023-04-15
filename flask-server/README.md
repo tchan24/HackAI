@@ -1,6 +1,10 @@
 - Open up the command line
 - Download python
-- Change your directory into flask-server
+- Change your directory into flask-server "cd flask-server"
 - Create a virtual enviorment using "python -m venv venv"
 - Activate the vitrual enviorment using ".\venv\Scripts\activate"
 - Install Flask "pip install Flask"
+- Install boto3 "pip install boto3"
+- Install pyarrow "pip install pyarrow"
+- Install fastparquet "pip install fastparquet"
+- Deactivate the vitrual enviorment using "deactivate"

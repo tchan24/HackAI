@@ -1,4 +1,7 @@
 import boto3
+import fastparaquet
+import pyarrow
+import flask
 import io
 import pandas as pd
 from IPython.display import display
