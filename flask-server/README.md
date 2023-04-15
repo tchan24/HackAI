@@ -1,0 +1,6 @@
+- Open up the command line
+- Download python
+- Change your directory into flask-server
+- Create a virtual enviorment using "python -m venv venv"
+- Activate the vitrual enviorment using ".\venv\Scripts\activate"
+- Install Flask "pip install Flask"
