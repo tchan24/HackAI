@@ -28,3 +28,6 @@ players_object = s3.Object('utd-hackathon', 'game_players.parquet')
 players_object.download_fileobj(buffer_players)
 
 df_players = pd.read_parquet(buffer_players)
+for col in df_players.columns:
+    print(col)
+display(df_players)
