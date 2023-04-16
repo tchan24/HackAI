@@ -4,11 +4,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Load the data into a Pandas DataFrame
-df = pd.read_csv('bustabit_data.csv')
+df = pd.read_csv('bustabit.csv')
 
 # Extract the relevant features and the target variable
-X = df[['bet', 'bonus', 'playdate']]
-y = df['cashed out']
+X = df[['Bet', 'Bonus', 'PlayDate', 'Profit', 'Username', 'BustedAt']]
+y = df['CashedOut']
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
